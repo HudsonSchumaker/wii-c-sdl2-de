@@ -42,7 +42,7 @@ void credits_screen_init(void) {
 
 void credits_screen_load(void) {
     // Title
-    title_texture = gfx_create_text(HemiHead_ttf, HemiHead_ttf_size, "Card Story", 48, color_red());
+    title_texture = gfx_create_text(HemiHead_ttf, HemiHead_ttf_size, "Hoshi Caos Ninja", 48, color_red());
     SDL_QueryTexture(title_texture, NULL, NULL, &title_rect.w, &title_rect.h);
     title_rect.x = (WINDOW_WIDTH - title_rect.w) * DIV2;
     title_rect.y = (WINDOW_HEIGHT - title_rect.h) * DIV8;
