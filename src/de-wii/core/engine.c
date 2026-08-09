@@ -20,7 +20,6 @@ void engine_init(void) {
         exit(EXIT_FAILURE);
     }
 
-    PAD_Init();
     build_trigo_tables();
     entity_manager_init(&entity_manager);
     animation_controller_pool_init(&animation_controller_pool);

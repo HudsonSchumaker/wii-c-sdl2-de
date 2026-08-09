@@ -40,6 +40,12 @@ u8 ctx_is_initialized(void);
 u8 ctx_is_video_initialized(void);
 
 /**
+ * @brief Checks if the pad subsystem is initialized.
+ * @return 1 if initialized, 0 otherwise
+*/
+u8 ctx_is_pad_initialized(void);
+
+/**
  * @brief Checks if the window is initialized.
  * @return 1 if initialized, 0 otherwise
 */

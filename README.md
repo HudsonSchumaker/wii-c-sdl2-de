@@ -1,4 +1,4 @@
-# Dodoi-Engine Wii - version 0.29.1
+# Dodoi-Engine Wii - version 0.29.2
 
 A lightweight 2D game engine for **Nintendo Wii** homebrew, built in C17 using the [devkitPPC](https://devkitpro.org/) toolchain and SDL2.
 
