@@ -84,7 +84,7 @@ u8 splash_screen_run(void) {
         splash_screen_update();
         splash_screen_render();
     }
-    return SCENE_GAME;
+    return SCENE_MENU;
 }
 
 void splash_screen_unload(void) {

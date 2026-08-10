@@ -7,8 +7,9 @@
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
 #include "app.h"
-#include "game/game_screen.h"
 #include "de-wii/core/engine.h"
+#include "game/game_screen.h"
+#include "game/menu_screen.h"
 #include "game/splash_screen.h"
 #include "game/credits_screen.h"
 
@@ -23,6 +24,11 @@ void app_start(void) {
             case SCENE_SPLASH:
                 splash_screen_init();
                 scene = splash_screen_get_scene();
+                break;
+
+            case SCENE_MENU:
+                menu_screen_init();
+                scene = menu_screen_get_scene();
                 break;
 
             case SCENE_GAME:

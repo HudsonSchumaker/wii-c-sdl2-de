@@ -12,6 +12,7 @@
 typedef enum {
     SCENE_EXIT = 0,
     SCENE_SPLASH,
+    SCENE_MENU,
     SCENE_GAME,
     SCENE_CREDITS
 } scene_id_e;
