@@ -6,9 +6,8 @@
  * @copyright Copyright (c) 2024, Dodoi-Lab
  */
 #include "animation_controller.h"
-#include "../core/engine.h"
 #include "../gfx/gfx.h"
-#include <string.h>
+#include "../core/engine.h"
 
 void animation_controller_pool_init(animation_controller_pool_t* pool) {
     memset(pool, 0, sizeof(animation_controller_pool_t));
