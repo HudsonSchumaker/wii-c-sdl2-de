@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_SFX_H
+#define DE_SFX_H
+
 #include "../de.h"
 
 /**
@@ -54,3 +56,5 @@ void sfx_unpause_music();
  * @brief Stops the currently playing music.
 */
 void sfx_stop_music();
+
+#endif // DE_SFX_H

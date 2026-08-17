@@ -21,22 +21,14 @@ static SDL_Rect logo_rect = {0};
 static SDL_Rect dodoi_rect = {0};
 
 void splash_screen_init(void) {
-    splash_screen = malloc(sizeof(scene_t));
-    if (splash_screen == NULL) {
-        exit(EXIT_FAILURE);
-    }
-
+    splash_screen = scene_init();
+    
     splash_screen->load   = splash_screen_load;
     splash_screen->input  = splash_screen_input;
     splash_screen->update = splash_screen_update;
     splash_screen->render = splash_screen_render;
     splash_screen->run    = splash_screen_run;
     splash_screen->unload = splash_screen_unload;
-
-    splash_screen->camera.color.r = 0;
-    splash_screen->camera.color.g = 0;
-    splash_screen->camera.color.b = 0;
-    splash_screen->camera.color.a = 255;
 }
 
 void splash_screen_load(void) {

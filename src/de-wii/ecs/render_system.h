@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_RENDER_SYSTEM_H
+#define DE_RENDER_SYSTEM_H
+
 #include "../de.h"
 #include "../core/camera.h"
 #include "texture_component.h"
@@ -19,3 +21,5 @@
  * @param c A pointer to the camera
 */
 void render_system(transform_pool_t* t, texture_pool_t* r, camera_t* c);
+
+#endif // DE_RENDER_SYSTEM_H

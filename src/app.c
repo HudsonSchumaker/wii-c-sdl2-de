@@ -14,7 +14,6 @@
 #include "game/credits_screen.h"
 
 void app_start(void) {
-    srand((unsigned int)time(NULL));
     u8 next_scene = SCENE_SPLASH;
     scene_t* scene = NULL;
     engine_init();

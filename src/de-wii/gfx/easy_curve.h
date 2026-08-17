@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_EASY_CURVE_H
+#define DE_EASY_CURVE_H
+
 #include "../de.h"
 
 /**
@@ -176,3 +178,5 @@ INLINE f32 ease_in_out_quart(f32 t) {
     f32 u = -2.0f * t + 2.0f;
     return 1.0f - (u * u * u * u) * 0.5f;
 }
+
+#endif // DE_EASY_CURVE_H

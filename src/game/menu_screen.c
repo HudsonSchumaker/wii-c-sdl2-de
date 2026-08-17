@@ -27,11 +27,8 @@ static void on_credits(void) { next_screen = SCENE_CREDITS; running = false; }
 static void on_quit(void)    { next_screen = SCENE_EXIT;    running = false; }
 
 void menu_screen_init(void) {
-    menu_screen = malloc(sizeof(scene_t));
-    if (menu_screen == NULL) {
-        exit(EXIT_FAILURE);
-    }
-
+    menu_screen = scene_init();
+    
     menu_screen->load   = menu_screen_load;
     menu_screen->input  = menu_screen_input;
     menu_screen->update = menu_screen_update;

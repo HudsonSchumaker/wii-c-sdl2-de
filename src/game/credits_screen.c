@@ -27,10 +27,7 @@ static SDL_Texture* b_b_texture = NULL;
 static SDL_Rect b_b_rect = {0};
 
 void credits_screen_init(void) {
-    credits_screen = malloc(sizeof(scene_t));
-    if (credits_screen == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    credits_screen = scene_init();
 
     credits_screen->load   = credits_screen_load;
     credits_screen->input  = credits_screen_input;
@@ -57,7 +54,7 @@ void credits_screen_load(void) {
     hudson_rect.x = (WINDOW_WIDTH - hudson_rect.w) * DIV2;
     hudson_rect.y = (WINDOW_HEIGHT - hudson_rect.h) * DIV4 + 32;
 
-    // Button B
+    // Button A
     b_b_texture = gfx_load_texture(bns_png, bns_png_size);
     SDL_QueryTexture(b_b_texture, NULL, NULL, &b_b_rect.w, &b_b_rect.h);
     b_b_rect.x = (WINDOW_WIDTH - b_b_rect.w) - 16;

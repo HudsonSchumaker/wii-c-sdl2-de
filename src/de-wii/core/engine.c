@@ -23,6 +23,7 @@ void engine_init(void) {
     build_trigo_tables();
     entity_manager_init(&entity_manager);
     animation_controller_pool_init(&animation_controller_pool);
+    srand((unsigned int)time(NULL));
 }
 
 void engine_quit(void) {

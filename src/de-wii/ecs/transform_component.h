@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_TRANSFORM_COMPONENT_H
+#define DE_TRANSFORM_COMPONENT_H
+
 #include "../de.h"
 
 /**
@@ -20,3 +22,5 @@ typedef struct {
     i32 ra[MAX_ENTITIES];
     i8  zi[MAX_ENTITIES]; 
 } transform_pool_t;
+
+#endif // DE_TRANSFORM_COMPONENT_H

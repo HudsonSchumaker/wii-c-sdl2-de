@@ -7,7 +7,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_INPUT_H
+#define DE_INPUT_H
+
 #include "../de.h"
 #include "../math/math2d.h"
 
@@ -63,3 +65,5 @@ bool input_button_held(u8 chan, u16 button);
  * @return true if the button transitioned from down to up this frame
 */
 bool input_button_up(u8 chan, u16 button);
+
+#endif // DE_INPUT_H

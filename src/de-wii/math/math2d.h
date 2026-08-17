@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_MATH2D_H
+#define DE_MATH2D_H
+
 #include "../de.h"
 //----------------------------------------------------------------
 // Lookup tables for trigonometric functions
@@ -426,3 +428,5 @@ INLINE f32 deg2rad(f32 deg) {
 INLINE f32 rad2deg(f32 rad) {
     return rad * RAD_2_DEG_F;
 }
+
+#endif // DE_MATH2D_H

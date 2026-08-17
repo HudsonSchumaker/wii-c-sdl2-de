@@ -7,7 +7,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
  */
-#pragma once
+#ifndef DE_ENGINE_H
+#define DE_ENGINE_H
+
 #include "../de.h"
 #include "../ecs/entity_manager.h"
 #include "../ecs/texture_component.h"
@@ -59,3 +61,5 @@ texture_pool_t* engine_get_texture_pool(void);
  * @return A pointer to the animation controller pool
  */
 animation_controller_pool_t* engine_get_animation_controller_pool(void);
+
+#endif // DE_ENGINE_H

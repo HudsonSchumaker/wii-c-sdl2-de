@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
  */
-#pragma once
+#ifndef DE_TEXTURE_COMPONENT_H
+#define DE_TEXTURE_COMPONENT_H
+
 #include "../de.h"
 
 /**
@@ -20,3 +22,5 @@ typedef struct {
     SDL_Rect src[MAX_ENTITIES];
     bool flip[MAX_ENTITIES];
 } texture_pool_t;
+
+#endif // DE_TEXTURE_COMPONENT_H

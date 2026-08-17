@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_SCENE_H
+#define DE_SCENE_H
+
 #include "../de.h"
 #include "../core/camera.h"
 
@@ -25,9 +27,9 @@ typedef struct {
 
 /**
  * @brief Initializes the scene, setting the camera of the scene.
- * @param scene Pointer to the scene to initialize.
+ * @return Pointer to the initialized scene.
 */
-void scene_init(scene_t* scene);
+scene_t* scene_init(void);
 
 /**
  * @brief Sets the current active scene. If there is an existing scene, it will be unloaded before the new scene is loaded and run.
@@ -45,3 +47,5 @@ void scene_begin_render(void);
  * @brief Ends the rendering process for the current scene.
 */
 void scene_end_render(void);
+
+#endif // DE_SCENE_H

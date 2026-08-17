@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_PARALLAX_H
+#define DE_PARALLAX_H
+
 #include "../de.h"
 
 /**
@@ -142,3 +144,5 @@ void parallax_vertical_destroy(parallax_vertical_t* parallax);
  * @param parallax Pointer to the parallax_horizontal_t struct to destroy
 */
 void parallax_horizontal_destroy(parallax_horizontal_t* parallax);
+
+#endif // DE_PARALLAX_H

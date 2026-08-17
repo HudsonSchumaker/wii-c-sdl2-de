@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_IMAGE_H
+#define DE_IMAGE_H
+
 #include "../de.h"
 #include "../gfx/color.h"
 
@@ -65,3 +67,5 @@ void image_set_tint(image_t* img, color_t color);
  * @param img Pointer to the image_t struct to render
 */
 void image_render(const image_t* img);
+
+#endif // DE_IMAGE_H

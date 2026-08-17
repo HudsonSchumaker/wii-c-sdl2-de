@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_APP_H
+#define DE_APP_H
+
 #include "de-wii/de.h"
 
 typedef enum {
@@ -22,3 +24,5 @@ typedef enum {
  * title screen, menu screen, and credits screen, and then quitting the engine.
 */
 void app_start(void);
+
+#endif // DE_APP_H

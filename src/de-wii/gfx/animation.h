@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
  */
-#pragma once
+#ifndef DE_ANIMATION_H
+#define DE_ANIMATION_H
+
 #include "../de.h"
 
 typedef struct {
@@ -33,3 +35,5 @@ void animation_stop(animation_t *animation);
  * @param animation A pointer to the animation to update.
  */
 void animation_update(animation_t* animation);
+
+#endif // DE_ANIMATION_H

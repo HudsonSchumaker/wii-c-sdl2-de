@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
  */
-#pragma once
+#ifndef DE_LABEL_H
+#define DE_LABEL_H
+
 #include "../de.h"
 #include "../gfx/color.h"
 
@@ -97,3 +99,5 @@ void label_set_text(label_t* lbl, const char* text, const u8* data, size_t size)
  * @param lbl Pointer to the label_t struct to release
  */
 void label_release(label_t* lbl);
+
+#endif // DE_LABEL_H

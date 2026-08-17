@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_ENTITY_MANAGER_H
+#define DE_ENTITY_MANAGER_H
+
 #include "../de.h"
 
 typedef enum {
@@ -108,3 +110,5 @@ static inline void entity_destroy(entity_manager_t* em, entity_t e) {
         em->next = e;
     }
 }
+
+#endif // DE_ENTITY_MANAGER_H

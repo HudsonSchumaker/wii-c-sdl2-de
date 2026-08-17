@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_MAP_H
+#define DE_MAP_H
+
 #include "../de.h"
 
 typedef enum {
@@ -45,3 +47,5 @@ void map_render(const map_t* map);
  * @return The type of the tile at the specified coordinates
 */
 map_tile_type_e map_get_tile_type(const map_t* map, short x, short y);
+
+#endif // DE_MAP_H

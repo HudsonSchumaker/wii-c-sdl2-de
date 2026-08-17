@@ -1,5 +1,5 @@
 /**
- * @file credit_screen.h
+ * @file credits_screen.h
  * @author Hudson Schumaker
  * @version 1.0.0
  *

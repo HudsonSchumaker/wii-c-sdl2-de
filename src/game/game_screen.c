@@ -23,12 +23,8 @@ static u8 next_screen = SCENE_CREDITS;
 static entity_t hoshi;
 
 void game_screen_init(void) {
-    game_screen = (scene_t *)malloc(sizeof(scene_t));
-    if (game_screen == NULL) {
-        exit(EXIT_FAILURE);
-    }
+    game_screen = scene_init();
 
-    scene_init(game_screen);
     game_screen->load = game_screen_load;
     game_screen->input = game_screen_input;
     game_screen->update = game_screen_update;

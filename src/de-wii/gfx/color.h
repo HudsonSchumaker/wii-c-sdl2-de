@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_COLOR_H
+#define DE_COLOR_H
+
 #include "../de.h"
 
 /**
@@ -113,3 +115,5 @@ color_t color_gray(void);
  * @return A color_t struct representing yellow
 */
 color_t color_yellow(void);
+
+#endif // DE_COLOR_H

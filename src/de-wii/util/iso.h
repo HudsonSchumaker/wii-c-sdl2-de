@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_ISO_H
+#define DE_ISO_H
+
 #include "../de.h"
 #include "../math/math2d.h"
 
@@ -43,3 +45,5 @@ vec2_t iso_to_screen(iso_grid_t g, f32 col, f32 row);
  * @return A vec2_t with the fractional (col, row) grid coordinate
 */
 vec2_t screen_to_iso(iso_grid_t g, f32 sx, f32 sy);
+
+#endif // DE_ISO_H

@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_BUTTON_H
+#define DE_BUTTON_H
+
 #include "../de.h"
 
 /**
@@ -66,3 +68,5 @@ void button_set_onclick(button_t* btn, button_onclick_callback_t callback);
  * @param btn Pointer to the button_t struct to render
 */
 void button_render(const button_t* btn);
+
+#endif // DE_BUTTON_H

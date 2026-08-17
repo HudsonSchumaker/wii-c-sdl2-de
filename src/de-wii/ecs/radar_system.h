@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_RADAR_SYSTEM_H
+#define DE_RADAR_SYSTEM_H
+
 #include "../de.h"
 #include "entity_manager.h"
 
@@ -16,3 +18,5 @@
  * @param target The tag of the target entities to check for
 */
 void radar_system(tag_e source, tag_e target);
+
+#endif // DE_RADAR_SYSTEM_H

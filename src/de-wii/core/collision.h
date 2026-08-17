@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_COLLISION_H
+#define DE_COLLISION_H
+
 #include "../de.h"
 #include "../math/math2d.h"
 
@@ -62,3 +64,5 @@ INLINE bool circle_intersects(vec2_t a, i32 ra, vec2_t b, i32 rb) {
     i32 rr = ra + rb;
     return vec2_distance_sq(a, b) <= (rr * rr);
 }
+
+#endif // DE_COLLISION_H

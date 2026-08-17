@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_MENU_H
+#define DE_MENU_H
+
 #include "../de.h"
 #include "label.h"
 #include "../gfx/color.h"
@@ -74,3 +76,5 @@ void menu_render(menu_t* m);
  * @param m Pointer to the menu
 */
 void menu_release(menu_t* m);
+
+#endif // DE_MENU_H

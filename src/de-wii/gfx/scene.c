@@ -10,10 +10,14 @@
 #include "../core/context.h"
 static scene_t* current_scene = NULL;
 
-void scene_init(scene_t* scene) {
-    if (scene) {
-        scene->camera = camera_new(color_black());
+scene_t* scene_init() {
+    scene_t* scene = malloc(sizeof(scene_t));
+    if (scene == NULL) {
+        exit(EXIT_FAILURE);
     }
+
+    scene->camera = camera_new(color_black());
+    return scene;
 }
 
 u8 scene_set_scene(scene_t* scene) {

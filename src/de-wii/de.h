@@ -87,6 +87,8 @@ typedef int64_t i64;
 typedef float   f32;
 typedef double  f64;
 typedef u16 entity_t;
+typedef char* str_t;
+typedef const char* string_t;
 
 typedef struct {
     u8 value;

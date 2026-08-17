@@ -6,7 +6,9 @@
  * Dodoi-Engine is a game engine developed by Dodoi-Lab.
  * @copyright Copyright (c) 2024, Dodoi-Lab
 */
-#pragma once
+#ifndef DE_GRID_H
+#define DE_GRID_H
+
 #include "../de.h"
 
 typedef struct {
@@ -47,3 +49,5 @@ void grid_destroy(grid_t* grid);
  * @param grid A pointer to the grid_t struct to render
 */
 void grid_render(grid_t* grid);
+
+#endif // DE_GRID_H
